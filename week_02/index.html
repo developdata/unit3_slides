@@ -3,19 +3,67 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>Big</title>
+  <title>Arduino</title>
   <link href="big.css" rel="stylesheet" type="text/css" />
   <script src="big.js"></script>
 </head>
 <body class="light">
   <div>
     <small>Unit 3</small>
-    Phsycial computing
-    <notes>Speakers notes go here.</notes>
+    Phsycial computing - Introduction to Arduino
+    <notes>Welcome to week 2. This week you will be getting started with Arduino, finding out how to program it and connect components to it. The aim of this workshop is to get you comfortable attaching components to an Arduino and using the Arduino development Environment (the IDE). There are a number of videos to watch for the introduction, in this video I will give an introduction to the Arduino, components and peripherals. There are further video for four projects. The first is one of the most basic projects, getting the light on the Arduino to blink.  The second project uses the same code but attaches an external LED. The third project introduces a button used to turn the light on and off, and the fourth takes this code further so the light toggles on and off with the button. </notes>
   </div>
     <div>
-    Second slide
-    <notes>Speakers notes go here.</notes>
+       <img src='images/github.jpg'/>
+    <notes>Along with the videos you can also look at the week two GitHub page https://github.com/developdata/CCIDiploma-Unit3/tree/master/week_2 which explains these projects and the code.</notes>
+  </div>
+    <div>
+       <img src='images/book.jpg'/>
+    <notes>There is an Arduino project book which is a really good way to learn Arduino (https://bastiaanvanhengel.files.wordpress.com/2016/06/arduino_projects_book.pdf ) it goes through the basics and will build your knowledge. Over the next four weeks, as homework I want you to work through the book.</notes>
+  </div>
+    <div>
+       <img src='images/mynotes.jpg'/>
+    <notes>At the bottom of the unit github page I have put notes I’ve made as I’ve gone through the book again (https://github.com/developdata/CCIDiploma-Unit3#arduino-project-book-notes ) </notes>
+  </div>
+  <div>
+    <small>Safety</small>
+    <ul>
+      <li>Disconnect the Arduino from its power source when connecting components</li>
+      <li>At this point don't go above 9V</li>
+      <li>Disconnect Arduino if a component gets hot or you smell burning</li>
+      <li>Capacitors can pop or explode if connected to the wrong pin</li>
+    </ul>
+    <notes>In this unit you will be working with electricity and electrical components. Safety has to be considered when working with electricity. When working on Arduino projects: 
+    Make sure that the Arduino is disconnected from its power source when you are attaching components, this power source maybe through the USB attachment to your computer or an external battery. 
+
+    All the projects in the book either use 5V (power from the USB) or 9V (through a battery). At this point you shouldn't go above this voltage for the Arduino. 
+
+    If a component gets overly hot, or you smell burning disconnect the power supply from the Arduino. 
+
+    There are some components that will overheat if they are not connected correctly, such as the temperature sensor, if it starts to get hot, disconnect the power supply 
+
+    Capacitors need to have the power and ground going to the correct pin, it they don’t they can pop or explode </notes>
+  </div>
+  <div>
+    Getting started with Arduino
+    <notes>On the Arduino there is a microcontroller that you can program.  
+    </notes>
+  </div>
+  <div>
+    <img src='images/sketch.jpg'/>
+    <notes>These programs are called Sketches, which have an .ino extension and can be created using the Arduino IDE. Once you have written your code you need to upload it to your Arduino, you do this by connecting your Arduino to your computer via USB and then downloading it to the Arduino. In order to do this the Sketch needs to know which Arduino you are using and which port it is connected to. 
+      
+    Computers have a series of ports that you can connect devices to, such as a keyboard or mouse. These ports could be USB, VGA or Ethernet, each port has a number. 
+    </notes>
+  </div>
+  <div>
+    <img src='images/arduinos.jpg'/>
+    <notes>There are a number of different types of Arduino boards with different capabilities. They all let you attach sensors and electronic components to build interactive electronic systems. 
+
+    There is also a programming environment, and IDE so you can write code for your Arduino in its programming language.  
+
+    The different Arduinos are similar, the layout for the Leonardo includes 
+    </notes>
   </div>
 </body>
 </html>
