@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>HTML and CSS</title>
+  <link href="big.css" rel="stylesheet" type="text/css" />
+  <script src="big.js"></script>
+</head>
+<body class="light" style="background-color: #F8F5F4;letter-spacing: 1px;">
+  <div>
+    REVERSE ENGINEERING WISHING WALL
+    <notes>In this video I am going to look at a physical computing project and try and work out how it was made. This is called reverse engineering and can be used to work out how software or hardware projects are made. </notes>
+  </div>
+
+  <div>
+    <img src='images/wishing.jpg' alt="a still of the butterflies in the wishing wall installation" /> 
+
+    <notes>The project I picked is one I showed in a previous workshop, it's called the wishing wall and was made by Varvara and Mar for the Digital Revolution exhibition that was shown in Istanbul, Athens, Stockholm and London. It was commissioned by Google and Barbican Centre for the exhibition. 
+
+      I’m first going to break down the elements of the project, then without researching how they did it, work out how I would make it. Once I’ve done that, I will do some research on how they did it and go through that. </notes>
+  </div>
+
+  <div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MX0Z6aHZYDw?start=29" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <notes>In it you speak into a microphone, what you say is shown as text on a screen, it then animates into a butterfly, the color of the butterfly will depend on what you said, for example a positive message will be a certain colour. If you put your hand close to the butterfly you will see the butterfly on your hand before it flies around the screen </notes>
+  </div>
+
+  <div>
+    <img src='images/breakdown-01.jpg' alt="text listing the elements that make up the wishing wall project" /> 
+
+    <notes>So, I need to break this down into the steps needed to do this: 
+      A way to capture what someone says 
+      A way to turn that into text and animate that text onto a screen 
+      Animate the text into a butterfly 
+      Choose a color for the butterfly based on the on the mood of the text 
+      Find out where the hand is in relation to the screen and butterfly 
+      Project the butterfly onto the hand 
+      After a period of time have the butterfly leave the hand and fly up the wall
+      So, then I can start to sketch out what I will need for this installation,  
+
+      There needs to be a way to capture what someone says  </notes>
+  </div>
+  <div>
+    <img src='images/setup_01.jpg' alt="a microphone" /> 
+
+    <notes>    A microphone 
+      And there is a surround around it so it fits with the mood of the piece 
+      Record the words from the microphone on a computer </notes>
+  </div>
+
+  <div>
+    <img src='images/setup_02.jpg' alt="the image builds with an arrow going from the microphone to a computer" /> 
+    <notes>    Turn the speech into digital text 
+      I will need software to do this so will need to connect the microphone to a computer 
+      It would be some sort of natural language processor to convert the speech to text, so I would need external libraries  </notes>
+  </div>
+
+  <div>
+    <img src='images/setup_03.jpg' alt="there is now a screen on the iamge with an arrow from the computer to the screen" /> 
+    <notes>    Turn the text into digital words that can animate onto a screen 
+      I would need a screen to display the animation 
+      Software for the screen that can display the animation 
+      Choose the color of the butterfly based on the mood of the text 
+      I would need to process the text through some sort of Sentiment analysis software 
+      Find out the where the hand is in relation to the screen </notes>
+  </div>
+
+  <div>
+    <img src='images/setup_04.jpg' alt="there is now a screen on the iamge with an arrow from the computer to the screen" /> 
+    <notes>    Need some sort of computer vision system, software and hardware 
+      Maybe something like a Kinect for the hardware </notes>
+  </div>
+
+  <div>
+    <img src='images/setup_05.jpg' alt="there is now a screen on the iamge with an arrow from the computer to the screen" /> 
+    <notes>    Some sort of AI software that can recognize hands 
+ </notes>
+  </div>
+  <div>
+    <img src='images/setup_06.jpg' alt="a projector image is added to the picutre" /> 
+    <notes>     A projector to project the butterfly onto the persons hand </notes>
+  </div>
+  <div>
+    <img src='images/setup_07.jpg' alt="a database image is added to the picutre" /> 
+    <notes>     A projector to project the butterfly onto the persons hand </notes>
+  </div>
+  <div>
+    <img src='images/JSON.png' alt="JSON that shows the libraries used in the wishing wall" /> 
+    <notes>     A projector to project the butterfly onto the persons hand </notes>
+  </div>
+</body>
+</html>
+
+
